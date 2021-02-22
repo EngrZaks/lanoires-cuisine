@@ -8,8 +8,9 @@ const Button = ({ name, onClick }) => (
          margin: "3px",
          borderRadius: "5px",
          border: "none",
-         textTransform: "uppercase",
-         fontSize: "large",
+         textTransform: "capitalize",
+         width: "40%",
+         // fontSize: "large",
       }}
       onClick={onClick}>
       {name}

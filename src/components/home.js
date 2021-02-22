@@ -8,11 +8,11 @@ export default function Home() {
             className='about'
             style={{
                position: "absolute",
-               top: "55%",
+               top: "60%",
                left: "50%",
                transform: "translate(-50%, -50%)",
                background: "rgba(255, 255, 255, 0.603)",
-               padding: "5px",
+               padding: "15px",
                borderRadius: "10px",
                width: "80%",
             }}>
