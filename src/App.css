@@ -10,29 +10,9 @@
    top: 0;
    right: 0;
 }
-.menu {
-   position: absolute;
-   top: 17px;
-   right: 12px;
-}
-.greeting {
-   position: absolute;
-   top: 15%;
-   color: gold;
-   width: 100%;
-   font-family: cursive;
-   text-decoration: italics;
-   transition: all 0.5s;
-}
-.greet {
-   transition: all 0.5s;
-   background: rgba(0, 0, 0, 0.7);
-   margin: 2px 0;
-   width: auto;
-   display: inline-block;
-   border-radius: 10px;
-   padding: 3px;
-}
+@import "./styles/menu.css";
+@import "./styles/greet.css";
+@import "./styles/contacts.css";
 .backgroundVideo {
    position: absolute;
    width: 100%;
@@ -50,36 +30,21 @@
    transform: translateX(-50%);
    color: rgba(0, 0, 0, 0.349);
 }
-
-.menuPage {
-   position: absolute;
-   width: 100%;
-   background: rgba(0, 0, 0, 0.97);
-   height: 50%;
-   z-index: 100;
-   box-shadow: 0 5px 10px 15px rgba(0, 0, 0, 0.85);
-   transition: all 0.5s;
+@import "./styles/price.css";
+.fade {
+   transition: 0.5s ease-in;
 }
-.menuContainer {
-   transition: all 0.5s;
-
-   position: absolute;
-   top: 50%;
-   left: 50%;
-   transform: translate(-50%, -50%);
+.fade-enter {
+   transform: translateY(-50%);
 }
-.menuPage a {
-   text-decoration: none;
-   color: gold;
-   background: rgba(255, 255, 255, 0.05);
-   padding: 5px;
-   border-radius: 5px;
-   display: block;
-   margin: 10px 0;
+.fade-enter-active {
+   transform: translateY(0);
 }
-.closebtn {
-   color: gold;
-   display: absolute;
+.fade-exit {
+   transform: translateY(0);
+}
+.fade-exit-active {
+   transform: translateY(50%);
 }
 /* .App-header {
    background-color: #282c34;
@@ -91,7 +56,6 @@
    font-size: calc(10px + 2vmin);
    color: white;
 } */
-
 .App-link {
    color: #61dafb;
 }

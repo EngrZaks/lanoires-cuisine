@@ -15,13 +15,18 @@ const priceList = [
 ];
 
 const PriceList = () => {
-   priceList.map((item) => (
-      <div key={item.name}>
+   const lists = priceList.map((item) => (
+      <div className='list' key={item.name}>
          <span className='item'>{item.name}</span>{" "}
          <span className='price'>{item.price}</span>
       </div>
    ));
-   return <div className='menuPage'></div>;
+   return (
+      <div className='priceList'>
+         <div className='title'>Price List</div>
+         {lists}
+      </div>
+   );
 };
 
 export default PriceList;

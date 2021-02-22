@@ -1,8 +1,8 @@
 const MenuLine = () => (
    <div
       style={{
-         height: "2px",
-         width: "20px",
+         height: "4px",
+         width: "30px",
          background: "tomato",
          margin: "3px 0",
       }}></div>

@@ -1,0 +1,32 @@
+.greeting {
+   position: absolute;
+   top: 15%;
+   color: gold;
+   width: 100%;
+   font-family: Helvetica;
+   text-decoration: italics;
+   transition: all 0.5s;
+   font-size: large;
+   font-weight: bolder;
+}
+.greet {
+   transition: all 0.5s;
+   background: rgba(0, 0, 0, 0.7);
+   margin: 2px 0;
+   width: auto;
+   display: inline-block;
+   border-radius: 10px;
+   padding: 20px;
+}
+.welcome,
+.moto {
+   transform: translateY(-150%);
+   display: none;
+   transition: 0.6s all cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.display {
+   display: block;
+}
+.animate {
+   transform: translateY(0);
+}

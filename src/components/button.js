@@ -3,12 +3,13 @@ const Button = ({ name, onClick }) => (
       style={{
          background: "rgba(0, 0, 0, 1)",
          color: "tomato",
-         padding: "10px",
+         padding: "15px",
          fontWeight: "bold",
          margin: "3px",
          borderRadius: "5px",
          border: "none",
          textTransform: "uppercase",
+         fontSize: "large",
       }}
       onClick={onClick}>
       {name}

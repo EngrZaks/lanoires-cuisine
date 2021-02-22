@@ -1,0 +1,40 @@
+.menu {
+   position: absolute;
+   top: 17px;
+   right: 12px;
+}
+.menuPage {
+   position: absolute;
+   width: 100%;
+   background: rgba(0, 0, 0, 0.97);
+   height: 50%;
+   z-index: 100;
+   box-shadow: 0 5px 10px 15px rgba(0, 0, 0, 0.85);
+   top: 0;
+   transition: all 0.5s;
+   transform: translateY(-100%);
+}
+.animate {
+   transform: translateY(0);
+}
+.menuContainer {
+   transition: all 0.5s;
+
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+}
+.menuPage a {
+   text-decoration: none;
+   color: gold;
+   background: rgba(255, 255, 255, 0.05);
+   padding: 5px;
+   border-radius: 5px;
+   display: block;
+   margin: 10px 0;
+}
+.closebtn {
+   color: gold;
+   display: absolute;
+}

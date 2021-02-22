@@ -1,13 +1,15 @@
 import React, { useState } from "react";
+import { Switch, BrowserRouter as Router, Route } from "react-router-dom";
+import { CSSTransition } from "react-transition-group";
 import "./App.css";
 import backgroundVideo from "./media/backgroundVideo1.mp4";
 import banner from "./media/banner.jpg";
-import Button from "./components/button";
 import Menu from "./components/menu";
 import MenuPage from "./components/menupage";
-import Greeting from "./components/welcome";
+import PriceList from "./components/price";
+import Home from "./components/home";
+import Contacts from "./components/contact";
 
-const showMenu = () => {};
 function App() {
    const [menuItem, setMenuItem] = useState(false);
    const toggleMenu = (e) => {
@@ -15,26 +17,28 @@ function App() {
       console.log("something");
       setMenuItem(!menuItem);
    };
+
    return (
       <div className='App'>
-         <img src={banner} className='banner' alt='logo' />
+         <img src={banner} className='banner' alt='logo' />;
          <div className='menu'>
             <a href='#' onClick={toggleMenu}>
                <Menu />
             </a>
          </div>
-         {menuItem && <MenuPage onClick={toggleMenu} />}
-         <video
-            className='backgroundVideo'
-            autoPlay
-            loop
-            src={backgroundVideo}
-         />
-         <Greeting />
-         <div className='buttons'>
-            <Button name='Order Now' />
-            <Button name='Book Us' />
-         </div>
+         <Router>
+            {menuItem && (
+               <MenuPage
+                  onClick={toggleMenu}
+                  click={() => setMenuItem(!menuItem)}
+               />
+            )}
+            <Switch>
+               <Route exact path='/price' component={PriceList} />
+               <Route exact path='/contacts' component={Contacts} />
+               <Route exact path='/' component={Home} />
+            </Switch>
+         </Router>
       </div>
    );
 }

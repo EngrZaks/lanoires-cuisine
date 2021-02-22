@@ -1,0 +1,33 @@
+.priceList {
+   background: rgba(0, 0, 0, 0.842);
+   color: white;
+   text-align: left;
+   padding: 12px;
+   position: absolute;
+   top: 52%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   width: 98%;
+   border-radius: 10px;
+}
+.list {
+   margin: 5px 0;
+   padding: 5px;
+   background: black;
+   /* display: flex; */
+}
+.price {
+   color: #ceaf01;
+
+   /* align-content: flex-end; */
+   float: right;
+}
+.priceList .title {
+   display: inline-block;
+   font-weight: bolder;
+   color: black;
+   background: tomato;
+   padding: 5px;
+   border-radius: 5px;
+   text-transform: uppercase;
+}
