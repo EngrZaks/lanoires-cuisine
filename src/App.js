@@ -2,14 +2,13 @@ import React, { useState } from "react";
 import { Switch, BrowserRouter as Router, Route } from "react-router-dom";
 import { CSSTransition } from "react-transition-group";
 import "./App.css";
-import backgroundVideo from "./media/backgroundVideo1.mp4";
 import banner from "./media/banner.jpg";
 import Menu from "./components/menu";
 import MenuPage from "./components/menupage";
 import PriceList from "./components/price";
 import Home from "./components/home";
 import Contacts from "./components/contact";
-
+import About from "./components/about";
 function App() {
    const [menuItem, setMenuItem] = useState(false);
    const toggleMenu = (e) => {
@@ -35,6 +34,7 @@ function App() {
             )}
             <Switch>
                <Route exact path='/price' component={PriceList} />
+               <Route exact path='/about' component={About} />
                <Route exact path='/contacts' component={Contacts} />
                <Route exact path='/' component={Home} />
             </Switch>

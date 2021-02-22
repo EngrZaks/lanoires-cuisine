@@ -1,5 +1,6 @@
 import Button from "./button";
 import Greeting from "./greeting";
+import meat from "../media/meat1.jpg";
 export default function Home() {
    const About = () => {
       return (
@@ -15,15 +16,11 @@ export default function Home() {
                borderRadius: "10px",
                width: "80%",
             }}>
-            <h2>About Us</h2>
             <p style={{ fontWeight: "bold" }}>
                Let us serve you the best soups and all kinds of peppered meats
                with Love and Care.
             </p>
-            <p>
-               La Noire's Cuisine is known for it's interaction with clients to
-               be able to serve them better
-            </p>
+            <img src={meat} alt='meat' width='60%' />
          </div>
       );
    };
