@@ -16,8 +16,8 @@
 
 .buttons {
    display: flex;
-   position: absolute;
-   bottom: 10px;
+   position: fixed;
+   bottom: 5px;
    left: 50%;
    transform: translateX(-50%);
    color: rgba(0, 0, 0, 0.349);
@@ -25,7 +25,20 @@
    max-width: 500px;
    align-items: center;
    justify-content: center;
+   background: black;
+   border-radius: 10px;
+   padding: 10px 0;
 }
+
+.about,
+.home {
+   transition: all 0.7s ease-in-out;
+   opacity: 0;
+}
+.blur {
+   backdrop-filter: blur(8px);
+}
+
 @import "./styles/price.css";
 .fade {
    transition: 0.5s ease-in;

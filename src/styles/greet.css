@@ -20,9 +20,10 @@
 }
 .welcome,
 .moto {
-   transform: translateY(-150%);
-   display: none;
+   transform: translateY(-350%);
+   /* display: none; */
    transition: 0.6s all cubic-bezier(0.075, 0.82, 0.165, 1);
+   font-family: var(--styleFont);
 }
 .display {
    display: block;

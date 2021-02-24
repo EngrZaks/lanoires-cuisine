@@ -1,18 +1,5 @@
-const Button = ({ name, onClick }) => (
-   <button
-      style={{
-         background: "rgba(0, 0, 0, 1)",
-         color: "tomato",
-         padding: "15px",
-         fontWeight: "bold",
-         margin: "3px",
-         borderRadius: "5px",
-         border: "none",
-         textTransform: "capitalize",
-         width: "40%",
-         // fontSize: "large",
-      }}
-      onClick={onClick}>
+const Button = ({ name, onClick, style }) => (
+   <button style={style} onClick={onClick}>
       {name}
    </button>
 );

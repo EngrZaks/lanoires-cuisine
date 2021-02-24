@@ -6,14 +6,22 @@ html {
 *:after {
    box-sizing: inherit;
 }
+@import url("https://fonts.googleapis.com/css2?family=Reggae+One&family=Roboto+Slab&display=swap");
+
+:root {
+   --styleFont: "Reggae One", cursive;
+   --mainFont: "Roboto Slab", serif;
+   --color: red;
+}
 body {
    margin: 0;
-   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+   /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
       "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
-      "Helvetica Neue", sans-serif;
+      "Helvetica Neue", sans-serif; */
+   font-family: var(--mainFont);
    -webkit-font-smoothing: antialiased;
    -moz-osx-font-smoothing: grayscale;
-   background: url(./media/pepper-soup.png);
+   background: url(./media/meat1.jpg);
    background-size: cover;
    background-color: brown;
 }

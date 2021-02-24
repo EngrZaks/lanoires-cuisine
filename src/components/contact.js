@@ -48,6 +48,9 @@ const Contacts = () => {
          );
       }
    }
+   setTimeout(() => {
+      document.querySelector(".contacts").style.opacity = 1;
+   }, 10);
    return (
       <div className='contacts'>
          <h2>contact us</h2>

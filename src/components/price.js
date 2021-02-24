@@ -15,6 +15,9 @@ const priceList = [
 ];
 
 const PriceList = () => {
+   setTimeout(() => {
+      document.querySelector(".priceList").style.opacity = 1;
+   }, 10);
    const lists = priceList.map((item) => (
       <div className='list' key={item.name}>
          <span className='item'>{item.name}</span>{" "}
