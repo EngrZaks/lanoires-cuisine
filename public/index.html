@@ -27,6 +27,20 @@
       <title>Lanoire's Cuisine</title>
    </head>
    <body>
+      <!-- A little help for the Netlify bots if you're not using a SSG -->
+      <form name="Order" netlify netlify-honeypot="bot-field" hidden>
+         <input type="text" name="name" />
+         <input type="email" name="email" />
+         <input type="tel" name="phone" />
+         <select name="item"></select>
+      </form>
+      <form name="Booking" netlify netlify-honeypot="bot-field" hidden>
+         <input type="text" name="name" />
+         <input type="email" name="email" />
+         <input type="tel" name="phone" />
+         <textarea name="details"></textarea>
+      </form>
+
       <noscript>You need to enable JavaScript to run this app.</noscript>
       <div id="root"></div>
       <!--

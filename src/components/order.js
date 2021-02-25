@@ -21,7 +21,8 @@ const OrderOrBookBase = ({ title, details = false, select = false }) => {
    return (
       <div className='order'>
          <h2>{title}</h2>
-         <form name={title} netlify>
+         <form name={title} method='post'>
+            <input type='hidden' name={title} value={title} />
             <input type='text' name='name' placeholder='Your Name' required />
             <input
                type='tel'

@@ -22,7 +22,7 @@
 }
 .menuContainer {
    transition: all 0.5s;
-
+   width: 100%;
    position: absolute;
    top: 50%;
    left: 50%;
@@ -36,6 +36,16 @@
    border-radius: 5px;
    display: block;
    margin: 10px 0;
+}
+.menuPage .orderbuttons {
+   /* margin: auto; */
+   display: flex;
+   /* width: 120%; */
+   align-items: center;
+   justify-content: center;
+}
+.menuPage .orderbuttons a {
+   background: none;
 }
 .closebtn {
    color: gold;

@@ -1,3 +1,5 @@
+import { NavLink } from "react-router-dom";
+
 import Button from "./button";
 import Greeting from "./greeting";
 import meat from "../media/meat1.jpg";
@@ -12,7 +14,7 @@ export const buttonStyle = {
    borderRadius: "5px",
    border: "none",
    textTransform: "capitalize",
-   width: "40%",
+   width: "95%",
 };
 export default function Home() {
    setTimeout(() => {
@@ -57,16 +59,12 @@ export default function Home() {
          <Greeting />
          <About />
          <div className='buttons'>
-            <Button
-               name='Order Now'
-               style={buttonStyle}
-               onClick={() => (window.location.href = "/order")}
-            />
-            <Button
-               name='Book Us'
-               style={buttonStyle}
-               onClick={() => (window.location.href = "/booking")}
-            />
+            <NavLink to='/order'>
+               <Button name='Order Now' style={buttonStyle} />
+            </NavLink>
+            <NavLink to='/booking'>
+               <Button name='Book Us' style={buttonStyle} />
+            </NavLink>
          </div>
       </div>
    );

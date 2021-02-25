@@ -40,17 +40,13 @@ const MenuPage = ({ onClick, click }) => {
             {/* <MenuList click={click} to='/gallery' text='Gallery' /> */}
             <MenuList click={click} to='/contacts' text='Contacts' />
             <MenuList click={click} to='/about' text='About Us' />
-            <div className=''>
-               <Button
-                  name='Order Now'
-                  style={orderBtnStyle}
-                  onClick={() => (window.location.href = "/order")}
-               />
-               <Button
-                  name='Book Us'
-                  style={orderBtnStyle}
-                  onClick={() => (window.location.href = "/booking")}
-               />
+            <div className='orderbuttons'>
+               <NavLink to='/order' onClick={click}>
+                  <Button name='Order Now' style={orderBtnStyle} />
+               </NavLink>
+               <NavLink to='/booking' onClick={click}>
+                  <Button name='Book Us' style={orderBtnStyle} />
+               </NavLink>
             </div>
             <Button
                className='closebtn'
