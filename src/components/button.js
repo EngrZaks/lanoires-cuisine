@@ -1,5 +1,5 @@
-const Button = ({ name, onClick, style }) => (
-   <button style={style} onClick={onClick}>
+const Button = ({ name, onClick, style, type }) => (
+   <button type={type} style={style} onClick={onClick}>
       {name}
    </button>
 );

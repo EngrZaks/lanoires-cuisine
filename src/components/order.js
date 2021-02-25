@@ -22,7 +22,7 @@ const OrderOrBookBase = ({ title, details = false, select = false }) => {
       <div className='order'>
          <h2>{title}</h2>
          <form name={title} method='post'>
-            <input type='hidden' name={title} value={title} />
+            <input type='hidden' name='form-name' value={title} />
             <input type='text' name='name' placeholder='Your Name' required />
             <input
                type='tel'
@@ -44,7 +44,7 @@ const OrderOrBookBase = ({ title, details = false, select = false }) => {
                   required
                />
             )}
-            <Button name={buttonTitle()} />
+            <Button type='submit' name={buttonTitle()} />
          </form>
       </div>
    );
