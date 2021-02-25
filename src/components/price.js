@@ -1,4 +1,4 @@
-const priceList = [
+export const priceList = [
    { name: "pepper soup", price: "NGN 1500" },
    { name: "Peppered Kpomo", price: "NGN 1500" },
    { name: "Peppered beef/Goat meat", price: "NGN 1500" },

@@ -1,5 +1,6 @@
 import { NavLink } from "react-router-dom";
 import Button from "../components/button";
+import { FiTwitter, FiMail, FiPhone } from "react-icons/fi";
 
 const closeBtnStyle = {
    background: "rgba(0, 0, 0, 1)",
@@ -11,6 +12,16 @@ const closeBtnStyle = {
    border: "none",
    textTransform: "capitalize",
    width: "40%",
+   fontSize: "larger",
+};
+const orderBtnStyle = {
+   margin: "5px",
+   border: "none",
+   color: "white",
+   background: " rgba(255, 99, 71, 0.2)",
+   padding: "5px",
+   fontWeight: closeBtnStyle.fontWeight,
+   textTransform: "uppercase",
 };
 const MenuList = ({ text, to, click }) => (
    <NavLink to={to} onClick={click}>
@@ -29,6 +40,18 @@ const MenuPage = ({ onClick, click }) => {
             {/* <MenuList click={click} to='/gallery' text='Gallery' /> */}
             <MenuList click={click} to='/contacts' text='Contacts' />
             <MenuList click={click} to='/about' text='About Us' />
+            <div className=''>
+               <Button
+                  name='Order Now'
+                  style={orderBtnStyle}
+                  onClick={() => (window.location.href = "/order")}
+               />
+               <Button
+                  name='Book Us'
+                  style={orderBtnStyle}
+                  onClick={() => (window.location.href = "/booking")}
+               />
+            </div>
             <Button
                className='closebtn'
                onClick={onClick}
@@ -36,7 +59,21 @@ const MenuPage = ({ onClick, click }) => {
                style={closeBtnStyle}
             />
          </div>
-         <small style={{ color: "white" }}>made with ❤ by Zaks</small>
+         <small style={{ color: "white" }}>
+            made with ❤ by Zaks{" "}
+            <a href='tel:08023767822'>
+               {" "}
+               <FiPhone />
+            </a>{" "}
+            <a href='mailto:abzakariyya@gmail.com'>
+               {" "}
+               <FiMail />
+            </a>{" "}
+            <a href='https://twitter.com/DevZaks'>
+               {" "}
+               <FiTwitter />
+            </a>{" "}
+         </small>
       </div>
    );
 };

@@ -10,7 +10,7 @@
    position: absolute;
    width: 100%;
    background: rgba(0, 0, 0, 0.97);
-   height: 50%;
+   height: 60%;
    z-index: 100;
    box-shadow: 0 5px 10px 15px rgba(0, 0, 0, 0.85);
    top: 0;
@@ -40,4 +40,14 @@
 .closebtn {
    color: gold;
    display: absolute;
+}
+
+.menuPage small {
+   font-weight: bold;
+   box-shadow: 0 2px 2px 2px rgba(255, 99, 71, 0.24);
+}
+.menuPage small a {
+   display: inline-block;
+   margin-left: 5px;
+   /* color: skyblue; */
 }

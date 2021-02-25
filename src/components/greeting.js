@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 const Welcome = () => {
    return <div className='greet'>Welcome to Lanoire's Cuisine</div>;
 };

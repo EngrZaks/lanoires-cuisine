@@ -2,6 +2,18 @@ import Button from "./button";
 import Greeting from "./greeting";
 import meat from "../media/meat1.jpg";
 
+export const buttonStyle = {
+   background: "rgba(0, 0, 0, 1)",
+   boxShadow: "0 2px 2px 2px rgba(255, 255, 255, 0.2)",
+   color: "tomato",
+   padding: "15px",
+   fontWeight: "bold",
+   margin: "5px",
+   borderRadius: "5px",
+   border: "none",
+   textTransform: "capitalize",
+   width: "40%",
+};
 export default function Home() {
    setTimeout(() => {
       document.querySelector(".home").style.opacity = 1;
@@ -13,18 +25,6 @@ export default function Home() {
       }, 400);
    }, 10);
 
-   const buttonStyle = {
-      background: "rgba(0, 0, 0, 1)",
-      boxShadow: "0 2px 2px 2px rgba(255, 255, 255, 0.2)",
-      color: "tomato",
-      padding: "15px",
-      fontWeight: "bold",
-      margin: "5px",
-      borderRadius: "5px",
-      border: "none",
-      textTransform: "capitalize",
-      width: "40%",
-   };
    const About = () => {
       return (
          <div
@@ -57,8 +57,16 @@ export default function Home() {
          <Greeting />
          <About />
          <div className='buttons'>
-            <Button name='Order Now' style={buttonStyle} />
-            <Button name='Book Us' style={buttonStyle} />
+            <Button
+               name='Order Now'
+               style={buttonStyle}
+               onClick={() => (window.location.href = "/order")}
+            />
+            <Button
+               name='Book Us'
+               style={buttonStyle}
+               onClick={() => (window.location.href = "/booking")}
+            />
          </div>
       </div>
    );
