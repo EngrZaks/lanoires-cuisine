@@ -40,7 +40,7 @@ const OrderOrBookBase = ({ title, details = false, select = false }) => {
                <textarea
                   name='details'
                   placeholder='How do you want our service(s)'
-                  rows='5'
+                  rows='3'
                   required
                />
             )}
