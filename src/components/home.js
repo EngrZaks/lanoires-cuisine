@@ -33,13 +33,14 @@ export default function Home() {
             className='home-about'
             style={{
                position: "absolute",
-               top: "60%",
+               top: "63%",
                left: "50%",
                transform: "translate(-50%, -50%)",
                background: "rgba(255, 255, 255, 0.603)",
                padding: "15px",
                borderRadius: "10px",
                width: "80%",
+               maxWidth: "500px",
             }}>
             <p style={{ fontWeight: "bold" }}>
                Let us serve you the best soups and all kinds of peppered meats
@@ -49,7 +50,7 @@ export default function Home() {
                src={meat}
                alt='meat'
                width='80%'
-               style={{ borderRadius: "10px" }}
+               style={{ borderRadius: "10px", maxWidth: "250px" }}
             />
          </div>
       );

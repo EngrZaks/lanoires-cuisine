@@ -17,6 +17,7 @@ const About = () => {
             padding: "20px",
             borderRadius: "10px",
             width: "80%",
+            maxWidth: "500px",
             boxShadow: "4px 4px 15px 10px rgba(0, 0, 0, 0.438)",
          }}>
          {/* <WhiteOverlay /> */}

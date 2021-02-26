@@ -36,6 +36,7 @@
    border-radius: 5px;
    display: block;
    margin: 10px 0;
+   margin-left: 10px;
 }
 .menuPage .orderbuttons {
    /* margin: auto; */
@@ -45,6 +46,8 @@
    justify-content: center;
 }
 .menuPage .orderbuttons a {
+   margin-left: 0;
+   margin: 10px;
    background: none;
 }
 .closebtn {

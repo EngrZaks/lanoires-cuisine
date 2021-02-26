@@ -5,7 +5,7 @@
 }
 .banner {
    width: 100%;
-   height: 15%;
+   height: 68px;
    position: absolute;
    top: 0;
    right: 0;
@@ -14,6 +14,7 @@
 @import "./styles/greet.css";
 @import "./styles/contacts.css";
 @import "./styles/order.css";
+@import "./styles/price.css";
 
 .buttons {
    display: flex;
@@ -38,33 +39,49 @@
 .blur {
    backdrop-filter: blur(8px);
 }
+.logo {
+   display: none;
+}
 
-@import "./styles/price.css";
-.fade {
-   transition: 0.5s ease-in;
-}
-.fade-enter {
-   transform: translateY(-50%);
-}
-.fade-enter-active {
-   transform: translateY(0);
-}
-.fade-exit {
-   transform: translateY(0);
-}
-.fade-exit-active {
-   transform: translateY(50%);
-}
-/* .App-header {
-   background-color: #282c34;
-   min-height: 100vh;
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   justify-content: center;
-   font-size: calc(10px + 2vmin);
-   color: white;
-} */
-.App-link {
-   color: #61dafb;
+@media screen and (min-width: 700px) {
+   .App {
+      /* display: none; */
+   }
+   .notice {
+      /* display: block; */
+      background: rgba(255, 255, 255, 0.6);
+      margin: auto;
+      width: 60%;
+      text-align: center;
+      padding: 15px;
+      border-radius: 10px;
+      margin-top: 60px;
+   }
+   .banner {
+      height: 50px;
+      position: absolute;
+      width: 35%;
+      border-radius: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      margin-top: 3px;
+   }
+   .greet {
+      padding: 10px;
+   }
+   .menuPage {
+      height: 20%;
+      align-items: center;
+      justify-content: center;
+   }
+   .menuContainer {
+      display: flex;
+      top: 65%;
+   }
+   .menuContainer * {
+      display: inline-block;
+      width: 100px;
+      margin: auto;
+      /* height: 50px; */
+   }
 }

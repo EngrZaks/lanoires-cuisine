@@ -5,17 +5,16 @@ import { FiTwitter, FiMail, FiPhone } from "react-icons/fi";
 const closeBtnStyle = {
    background: "rgba(0, 0, 0, 1)",
    color: "tomato",
-   padding: "15px",
+   padding: "13px",
    fontWeight: "bold",
    margin: "3px",
    borderRadius: "5px",
    border: "none",
    textTransform: "capitalize",
-   width: "40%",
    fontSize: "larger",
 };
 const orderBtnStyle = {
-   margin: "5px",
+   // margin: "10px",
    border: "none",
    color: "white",
    background: " rgba(255, 99, 71, 0.2)",
