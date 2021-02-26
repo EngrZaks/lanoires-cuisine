@@ -11,7 +11,6 @@ import Contacts from "./components/contact";
 import About from "./components/about";
 import { Order } from "./components/order";
 import { Booking } from "./components/order";
-import meat from "./media/meatlogo.jpg";
 
 function App() {
    const [menuItem, setMenuItem] = useState(false);
@@ -22,7 +21,6 @@ function App() {
    };
    return (
       <div className='App'>
-         <img src={meat} className='logo' alt='Lanoire Logo' />;
          <img src={banner} className='banner' alt='Lanoire banner' />;
          <div className='menu'>
             <a href='#' onClick={toggleMenu}>
